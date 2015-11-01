@@ -5,3 +5,4 @@ tmp
 .texlipse
 *.synctex.gz
 *.swp
+*#
