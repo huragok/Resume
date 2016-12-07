@@ -25,8 +25,9 @@
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{enumitem}% http://ctan.org/pkg/enumitem
-\usepackage{hyperref} 
+\usepackage{hyperref}
 \usepackage{array}
+\usepackage{cite}
 %\usepackage[none]{hyphenat}%%%%
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
@@ -59,7 +60,8 @@
         %----------------------------------------------------------------------------------------
      
         \section{OBJECTIVE}  
-        A postdoc position in Wireless Communications.
+        A postdoc position in signal processing, wireless communication,
+        data science and related fields.
     
         %----------------------------------------------------------------------------------------
         % EDUCATION SECTION
@@ -67,145 +69,181 @@
     
         \section{EDUCATION}
     
-        {\sl Ph.D. Candidate in Electrical and Computer Engineering} \hfill 2012 -
-        2017 (expected) \\
+        {\sl \bf Ph.D. Candidate in Electrical and Computer Engineering} \hfill
+        2012 - 2017 (expected) \\
         University of California, Davis, Davis, CA \\
         Advisor: Prof. Zhi Ding \\
-        Cumulative GPA: 3.95 \\
-        Minor: Mathematics 
+        Cumulative GPA: 3.96
         
-        {\sl B.S. in Electrical Engineering}  \hfill 2008 - 2012\\
+        {\sl \bf M.S. in Electrical and Computer Engineering}  \hfill 2012 -
+        2014\\
+        University of California, Davis, Davis, CA
+        
+        {\sl \bf B.S. in Electrical Engineering}  \hfill 2008 - 2012\\
         Tsinghua University, Beijing, China
        
         %----------------------------------------------------------------------------------------
         % TECHNICAL SKILLS SECTION
         %----------------------------------------------------------------------------------------
-    
-         %----------------------------------------------------------------------------------------
-        % PUBLICATIONS SECTION
-        %---------------------------------------------------------------------------------------- 
-    
-        \section{SELECTED PUBLICATIONS}
-        \begin{enumerate}[label={[\arabic*]}]
-          \item W. Wu, Z. Ding, ``On Efficient Packet Switched
-          Wireless Networking: A Markovian Approach to Trans-layer Design and
-          Optimization of ROHC'', \emph{IEEE Trans. Wireless Commun.}, submitted
-          for publication.
-          \item W. Wu, H. Mittelmann and Z. Ding, ``Modulation Design for
-          MIMO-CoMP HARQ'', \emph{IEEE Commun. Lett.}, to be published.
-          \item W. Wu, H. Mittelmann and Z. Ding, ``Modulation Design for
-          Two-Way Amplify-and-Forward Relay HARQ,'' \emph{IEEE Wireless
-          Commun. Lett.}, vol. 5, no. 3, pp. 244-247, June 2016.
-          \item W. Wu, H. Mittelmann, and Z. Ding, ``Statistical analysis of a
-          posteriori channel and noise distribution based on HARQ feedback,”
-          preprint: arXiv:1601.04131v1, 2016.
-          \item W. Wu, K. Wang, W. Zeng, Z. Ding, and C. Xiao,
-          ``Cooperative multi-cell MIMO downlink precoding with
-          finite-alphabet inputs,'' \emph{IEEE Trans. Commun.}, vol. 63, no.
-          3, pp. 766-779, Mar. 2015.
-          \item W. Wu, K. Wang, Z. Ding, and C. Xiao, ``Cooperative multi-cell
-          MIMO downlink precoding for finite-alphabet inputs,'' in
-          \emph{IEEE Proc. Int. Conf. Acoust., Speech, Signal Process.}, May
-          2014, pp. 464-468.
-        \end{enumerate}
-        
         \section{TECHNICAL \\ SKILLS}
         
-        \begin{itemize}
+        \begin{itemize}[leftmargin=*]
             \item Wireless Communication, Signal Processing, Statistical
             Learning.
             \item Java, Python, C/C++, Matlab/GNU Octave, R.
             \item Experience with HTML, XML, JavaScript, D3, CSS and SQL.
-            \item Basic Linux system administration.
         \end{itemize} 
-    
-    
+        
+        %----------------------------------------------------------------------------------------
+        % RESEARCH INTERESTS
+        %---------------------------------------------------------------------------------------- 
+        \section{RESEARCH INTERESTS}
+        {\sl\bf Trans-Layer Design of RObust Header Compression:} (with
+        Prof. Zhi Ding)\\
+        Designing adaptive ROHC compressor exploiting various imperfect and
+        delayed trans-layer information to take the optimal actions (e.g.
+        compression level, feedback request,etc.) based on a POMDP framework
+        \cite{wu2017efficient, wu2016efficient}.
+        
+        
+        {\sl \bf Modulation Diversity for HARQ:} (with Prof. H. Mittelmann, 
+        Prof. Zhi Ding)\\
+        Modulation diversity design for various wireless channels with
+        HARQ by solving Quadratic Assignment Problems (QAPs) to reduce bit error
+        rate (BER) \cite{wu2016modulation2,
+        wu2016modulation1, wu2016statistical}.
+        
+        {\sl \bf Cooperative multi-cell MIMO downlink precoding with
+        finite-alphabet inputs:} (with Prof. Zhi Ding, Prof. Chengshan Xiao)\\
+        Optimal linear precoder design for multi-cell MIMO downlink channel
+        and finite-alphabet inputs with distributed implementation.
+        \cite{wu2015cooperative, wu2014cooperative}.
+        
         %----------------------------------------------------------------------------------------
         % PROFESSIONAL EXPERIENCE SECTION
         %----------------------------------------------------------------------------------------
      
         \section{EXPERIENCE}
         
-        {\sl Core Engineer Intern} \hfill 07/2014 - 09/2014 \\
-        Range Networks, San Francisco, CA. Supervisor: James Peroulas.
+        {\sl\bf Core Engineer Intern} \hfill 07/2014 - 09/2014 \\
+        Range Networks, San Francisco, CA. Supervisor: James Peroulas.\\
+        Implemented and tested the GMSK modulator of openBTS. Complete the
+        software implementation of LTE PRACH receiver.
         
-        {\sl Teaching Assistant} \hfill 01/2013 - 04/2013 \\
+        {\sl\bf Teaching
+        Assistant} \hfill 01/2013 - 04/2013 \\
         EEC 180A Digital Systems, Dept. ECE, UC Davis. Supervisor: Prof. Bevan
         Baas.
         
-        
-        
-        %----------------------------------------------------------------------------------------
+         %----------------------------------------------------------------------------------------
         % PROJECTS SECTION
         %---------------------------------------------------------------------------------------- 
         \section{COURSE PROJECTS}
-        {\sl NYC Taxi Data Pickup Prediction (STA 208)} \hfill 06/2016
-        \begin{itemize} 
-          \item \url{https://github.com/huragok/STA208/tree/master/project}.
-        \end{itemize}
+        \href{https://github.com/huragok/STA208/tree/master/project}{{\bf NYC
+        Taxi Data Pickup Prediction} (STA 208)} \hfill 06/2016 \\
+        Predicting hourly taxi pickup per NTA in NYC using TLC trip record
+        and NOAA weather dataset.
         
-        {\sl Inferring the Night Life Hotspot in NYC from Taxi Trip Data (MAT
-        280)} \hfill 06/2016
-        \begin{itemize}
-          \item \url{https://github.com/huragok/MAT280/tree/master/project}.
-        \end{itemize}
+        \href{https://github.com/huragok/MAT280/tree/master/project}{{\bf
+        Inferring the Night Life Hotspot from Taxi Trip Data} (MAT 280)} \hfill
+        06/2016
+        Clustering neighborhoods in NYC based on daily taxi
+        pickup-dropoff patterns.
         
-        {\sl A Partial Solution Manual for: The Elements of Statistical Learning
-        } \hfill 01/2016
-        \begin{itemize} 
-            \item \url{https://github.com/huragok/IDA}.
-        \end{itemize}
+        \href{https://github.com/huragok/IDA}{\bf A Solution Manual for: The
+        Elements of Statistical Learning } \hfill 01/2016
         
-        {\sl Data Visualization on Community Detection of Facebook Data (STA
-        242)} \hfill 06/2015
-        \begin{itemize} 
-            \item \url{https://github.com/huragok/STA242Project}.
-        \end{itemize}
+        \href{https://github.com/huragok/MAT228C}{{\bf An Introduction to
+        Algebraic Multigrid} (MAT 228C)} \hfill 06/2013
         
-        {\sl An Introduction to Algebraic Multigrid (MAT 228C)}
-        \hfill 06/2013
-        \begin{itemize} 
-            \item \url{https://github.com/huragok/MAT228C}.
-        \end{itemize}
-        
-        {\sl Wireless Local Area Network Received Signal
-        Strength Based Indoor Localization And Tracking Algorithms Using Field
-        Data (ECS 257)} \hfill 03/2013
-        \begin{itemize} 
-            \item \url{https://github.com/huragok/ECS257}.
-        \end{itemize}
+        \href{https://github.com/huragok/ECS257}{{\bf WLAN RSSI-Based Indoor
+        Localization And Tracking} (ECS 257)} \hfill 03/2013 \\
+        Implementation and demonstration of various localization And
+        tracking with real-world RSSI data and floor plan.
         
         
-       
-    
-        %----------------------------------------------------------------------------------------
-        % WEBSITES SECTION
-        %----------------------------------------------------------------------------------------
-    
-        \section{WEBSITES} 
-        \begin{itemize}
-            \item LinkedIn: \url{https://www.linkedin.com/in/wenhao-wu-0ab2494b}
-            \item Github: \url{https://github.com/huragok}
-        \end{itemize}
         
         %\pagebreak 
         %----------------------------------------------------------------------------------------
         % HONORS & AWARDS SECTION
         %----------------------------------------------------------------------------------------
         \section{HONORS \& \\ AWARDS}
-        \begin{tabular}{L{10cm}R{2.1cm}}
-            Third-class Excellent Social Service Scholarship, Tsinghua
-            University. & 10/2011 \\
-            \vspace{1pt} \\% Gap between title and text
-            Honor of Excellent Leader of the Student Association for Science
-            and Technology, Tsinghua University. & 04/2011 \\
-            \vspace{1pt} \\% Gap between title and text
-            First-class Outstanding Scholarship (Samsung Scholarship),
-            Tsinghua University/Samsung. & 12/2009 \\
-            \vspace{1pt} \\% Gap between title and text
-            Second-class Outstanding Freshman Scholarship, Tsinghua University.
-            & 12/2008
-        \end{tabular}
+        {\bf Third-class Excellent Social Service Scholarship} \hfill 10/2011 \\
+        Tsinghua University, Beijing, China
+        
+        {\bf Honor of Excellent Leader of the Student Association for S\&T}
+        \hfill 04/2011 \\
+        Tsinghua University, Beijing, China
+        
+        {\bf First-class Outstanding Scholarship (Samsung Scholarship)}
+        \hfill 12/2009 \\
+        Tsinghua University, Beijing, China
+        
+        {\bf Second-class Outstanding Freshman Scholarship}
+        \hfill 12/2008 \\
+        Tsinghua University, Beijing, China
+        
+        %----------------------------------------------------------------------------------------
+        % WEBSITES SECTION
+        %----------------------------------------------------------------------------------------
+    
+        \section{WEBSITES} 
+        LinkedIn: \url{https://www.linkedin.com/in/wenhao-wu-0ab2494b}\\
+        Github: \url{https://github.com/huragok}
+        
+        %----------------------------------------------------------------------------------------
+        % PUBLICATIONS SECTION
+        %---------------------------------------------------------------------------------------- 
+        \section{SELECTED PUBLICATIONS}
+        \bibliographystyle{./IEEEtran}
+        \renewcommand{\section}[2]{}
+        \begin{thebibliography}{}
+          \providecommand{\url}[1]{#1}
+          \csname url@samestyle\endcsname
+          \providecommand{\newblock}{\relax}
+          \providecommand{\bibinfo}[2]{#2}
+          \providecommand{ }{\spaceskip=0pt\relax}
+          \providecommand{\BIBentryALTinterwordstretchfactor}{4}
+          \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
+          \BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+            \fontdimen4\font\relax}
+          \providecommand{\BIBforeignlanguage}[2]{{%
+          \expandafter\ifx\csname l@#1\endcsname\relax
+          \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+          \typeout{** loaded for the language `#1'. Using the pattern for}%
+          \typeout{** the default language instead.}%
+          \else
+          \language=\csname l@#1\endcsname
+          \fi
+          #2}}
+          \providecommand{\BIBdecl}{\relax}
+          \BIBdecl
+          
+          \itemsep=4pt
+          \bibitem{wu2017efficient} W. Wu, Z. Ding, ``On Efficient Packet
+          Switched Wireless Networking: A Markovian Approach to Trans-layer Design of
+          Bidirectional ROHC '', in preparation.
+          \bibitem{wu2016efficient} W. Wu, Z. Ding, ``On Efficient Packet Switched
+          Wireless Networking: A Markovian Approach to Trans-layer Design and
+          Optimization of ROHC'', \emph{IEEE Trans. Wireless Commun.}, submitted
+          for publication.
+          \bibitem{wu2016modulation2} W. Wu, H. Mittelmann and Z. Ding,
+          ``Modulation Design for MIMO-CoMP HARQ'', \emph{IEEE Commun. Lett.}, to be published.
+          \bibitem{wu2016modulation1} W. Wu, H. Mittelmann and Z. Ding, ``Modulation Design for
+          Two-Way Amplify-and-Forward Relay HARQ,'' \emph{IEEE Wireless
+          Commun. Lett.}, vol. 5, no. 3, pp. 244-247, June 2016.
+          \bibitem{wu2016statistical} W. Wu, H. Mittelmann, and Z. Ding, ``Statistical analysis of a
+          posteriori channel and noise distribution based on HARQ feedback,”
+          preprint: arXiv:1601.04131v1, 2016.
+          \bibitem{wu2015cooperative} W. Wu, K. Wang, W. Zeng, Z. Ding, and C. Xiao,
+          ``Cooperative multi-cell MIMO downlink precoding with
+          finite-alphabet inputs,'' \emph{IEEE Trans. Commun.}, vol. 63, no.
+          3, pp. 766-779, Mar. 2015.
+          \bibitem{wu2014cooperative} W. Wu, K. Wang, Z. Ding, and C. Xiao, ``Cooperative multi-cell
+          MIMO downlink precoding for finite-alphabet inputs,'' in
+          \emph{IEEE Proc. Int. Conf. Acoust., Speech, Signal Process.}, May
+          2014, pp. 464-468.
+        \end{thebibliography}
         
     \end{resume}
 \end{document}
